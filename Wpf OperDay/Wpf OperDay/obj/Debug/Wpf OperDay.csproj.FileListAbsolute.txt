@@ -1,0 +1,94 @@
+D:\CS WF\Wpf OperDay\Wpf OperDay\bin\Debug\Wpf OperDay.exe.config
+D:\CS WF\Wpf OperDay\Wpf OperDay\bin\Debug\Wpf OperDay.exe
+D:\CS WF\Wpf OperDay\Wpf OperDay\bin\Debug\Wpf OperDay.pdb
+D:\CS WF\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.csprojResolveAssemblyReference.cache
+D:\CS WF\Wpf OperDay\Wpf OperDay\obj\Debug\MainWindow.g.cs
+D:\CS WF\Wpf OperDay\Wpf OperDay\obj\Debug\App.g.cs
+D:\CS WF\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay_MarkupCompile.cache
+D:\CS WF\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay_MarkupCompile.lref
+D:\CS WF\Wpf OperDay\Wpf OperDay\obj\Debug\MainWindow.baml
+D:\CS WF\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.g.resources
+D:\CS WF\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf_OperDay.Properties.Resources.resources
+D:\CS WF\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.csproj.GenerateResource.Cache
+D:\CS WF\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.exe
+D:\CS WF\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.pdb
+D:\CS WF\Wpf OperDay\Wpf OperDay\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\CS WPF\Wpf OperDay\Wpf OperDay\bin\Debug\Wpf OperDay.exe.config
+D:\CS WPF\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.exe
+D:\CS WPF\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.pdb
+F:\WPF\Wpf OperDay\Wpf OperDay\bin\Debug\Wpf OperDay.exe.config
+F:\WPF\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.exe
+F:\WPF\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.pdb
+E:\WPF\Wpf OperDay\Wpf OperDay\bin\Debug\Wpf OperDay.exe.config
+E:\WPF\Wpf OperDay\Wpf OperDay\bin\Debug\Wpf OperDay.exe
+E:\WPF\Wpf OperDay\Wpf OperDay\bin\Debug\Wpf OperDay.pdb
+E:\WPF\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.csprojResolveAssemblyReference.cache
+E:\WPF\Wpf OperDay\Wpf OperDay\obj\Debug\MainWindow.g.cs
+E:\WPF\Wpf OperDay\Wpf OperDay\obj\Debug\App.g.cs
+E:\WPF\Wpf OperDay\Wpf OperDay\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\WPF\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay_MarkupCompile.cache
+E:\WPF\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay_MarkupCompile.lref
+E:\WPF\Wpf OperDay\Wpf OperDay\obj\Debug\MainWindow.baml
+E:\WPF\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.g.resources
+E:\WPF\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf_OperDay.Properties.Resources.resources
+E:\WPF\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.csproj.GenerateResource.Cache
+E:\WPF\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.exe
+E:\WPF\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.pdb
+C:\Users\123\Desktop\Wpf OperDay\Wpf OperDay\bin\Debug\Wpf OperDay.exe.config
+C:\Users\123\Desktop\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.exe
+C:\Users\123\Desktop\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.pdb
+C:\Users\123\Desktop\Wpf OperDay\Wpf OperDay\bin\Debug\Wpf OperDay.exe
+C:\Users\123\Desktop\Wpf OperDay\Wpf OperDay\bin\Debug\Wpf OperDay.pdb
+C:\Users\123\Desktop\Wpf OperDay\Wpf OperDay\obj\Debug\MainWindow.g.cs
+C:\Users\123\Desktop\Wpf OperDay\Wpf OperDay\obj\Debug\App.g.cs
+C:\Users\123\Desktop\Wpf OperDay\Wpf OperDay\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\123\Desktop\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay_MarkupCompile.cache
+C:\Users\123\Desktop\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay_MarkupCompile.lref
+C:\Users\123\Desktop\Wpf OperDay\Wpf OperDay\obj\Debug\MainWindow.baml
+C:\Users\123\Desktop\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.g.resources
+C:\Users\123\Desktop\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf_OperDay.Properties.Resources.resources
+C:\Users\123\Desktop\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.csproj.GenerateResource.Cache
+E:\Wpf OperDay\Wpf OperDay\bin\Debug\Wpf OperDay.exe.config
+E:\Wpf OperDay\Wpf OperDay\bin\Debug\Wpf OperDay.exe
+E:\Wpf OperDay\Wpf OperDay\bin\Debug\Wpf OperDay.pdb
+E:\Wpf OperDay\Wpf OperDay\obj\Debug\MainWindow.g.cs
+E:\Wpf OperDay\Wpf OperDay\obj\Debug\App.g.cs
+E:\Wpf OperDay\Wpf OperDay\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay_MarkupCompile.cache
+E:\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay_MarkupCompile.lref
+E:\Wpf OperDay\Wpf OperDay\obj\Debug\MainWindow.baml
+E:\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.g.resources
+E:\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf_OperDay.Properties.Resources.resources
+E:\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.csproj.GenerateResource.Cache
+E:\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.exe
+E:\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.pdb
+D:\CS WPF\Wpf OperDay\Wpf OperDay\bin\Debug\Wpf OperDay.exe
+D:\CS WPF\Wpf OperDay\Wpf OperDay\bin\Debug\Wpf OperDay.pdb
+D:\CS WPF\Wpf OperDay\Wpf OperDay\obj\Debug\MainWindow.g.cs
+D:\CS WPF\Wpf OperDay\Wpf OperDay\obj\Debug\App.g.cs
+D:\CS WPF\Wpf OperDay\Wpf OperDay\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\CS WPF\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay_MarkupCompile.cache
+D:\CS WPF\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay_MarkupCompile.lref
+D:\CS WPF\Wpf OperDay\Wpf OperDay\obj\Debug\MainWindow.baml
+D:\CS WPF\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.g.resources
+D:\CS WPF\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf_OperDay.Properties.Resources.resources
+D:\CS WPF\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.csproj.GenerateResource.Cache
+D:\CS WPF\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf_OperDay.AboutBox1.resources
+C:\Users\student\Desktop\Wpf OperDay\Wpf OperDay\bin\Debug\Wpf OperDay.exe.config
+C:\Users\student\Desktop\Wpf OperDay\Wpf OperDay\bin\Debug\Wpf OperDay.exe
+C:\Users\student\Desktop\Wpf OperDay\Wpf OperDay\bin\Debug\Wpf OperDay.pdb
+C:\Users\student\Desktop\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.csprojResolveAssemblyReference.cache
+C:\Users\student\Desktop\Wpf OperDay\Wpf OperDay\obj\Debug\MainWindow.g.cs
+C:\Users\student\Desktop\Wpf OperDay\Wpf OperDay\obj\Debug\App.g.cs
+C:\Users\student\Desktop\Wpf OperDay\Wpf OperDay\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\student\Desktop\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay_MarkupCompile.cache
+C:\Users\student\Desktop\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay_MarkupCompile.lref
+C:\Users\student\Desktop\Wpf OperDay\Wpf OperDay\obj\Debug\MainWindow.baml
+C:\Users\student\Desktop\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.g.resources
+C:\Users\student\Desktop\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf_OperDay.AboutBox1.resources
+C:\Users\student\Desktop\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf_OperDay.Properties.Resources.resources
+C:\Users\student\Desktop\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.csproj.GenerateResource.Cache
+C:\Users\student\Desktop\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.exe
+C:\Users\student\Desktop\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.pdb
+C:\Users\123\Desktop\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf_OperDay.AboutBox1.resources
+C:\Users\123\Desktop\Wpf OperDay\Wpf OperDay\obj\Debug\Wpf OperDay.csprojResolveAssemblyReference.cache

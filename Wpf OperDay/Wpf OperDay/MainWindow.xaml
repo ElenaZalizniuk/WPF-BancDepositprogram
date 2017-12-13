@@ -1,0 +1,325 @@
+﻿<Window x:Class="Wpf_OperDay.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_OperDay"
+        mc:Ignorable="d"
+        Title="OperDay" FontWeight="Bold" FontSize="14" FontFamily="Calibri" SizeToContent="Manual" WindowStyle="SingleBorderWindow" 
+        WindowStartupLocation="CenterScreen" Background="Aqua" Loaded="Window_Loaded" Icon="icon.png">
+
+    <Window.Resources>
+        <!--binding class CuctomID-->
+        <local:CustomID x:Key="customers"></local:CustomID>
+        <!--binding class Account-->
+        <local:Account x:Key="account"></local:Account>
+        <!--binding class Deposit-->
+        <local:Deposit x:Key="deposit"></local:Deposit>
+        <!--create styles for properties:-->
+        <Style x:Key="Myborder">
+            <Setter Property="Border.Background" Value="Bisque"/>
+            <Setter Property="Border.BorderBrush" Value="Aqua"/>
+            <Setter Property="Border.BorderThickness" Value="3"/>
+            <Setter Property="Border.CornerRadius" Value="5"/>
+            <Setter Property="Border.Margin" Value="2"/>
+        </Style>
+        <Style x:Key="Mydatagrid">
+            <Setter Property="DataGrid.Background" Value="Bisque"/>
+            <Setter Property="DataGrid.AutoGenerateColumns" Value="False"/>
+            <Setter Property="DataGrid.BorderBrush" Value="Cornsilk"/>
+            <Setter Property="DataGrid.BorderThickness" Value="2"/>
+            <Setter Property="DataGrid.FontFamily" Value="Times New Roman"/>
+            <Setter Property="DataGrid.FontSize" Value="14"/>
+            <Setter Property="DataGrid.Foreground" Value="DarkBlue"/>
+            <Setter Property="DataGrid.Height" Value="Auto"/>
+        </Style>
+        <Style x:Key="Row">
+            <Setter Property="RowDefinition.Height" Value="50"/>
+        </Style>
+        <Style x:Key="Button">
+            <Setter Property="Control.Background" Value="Aqua" />
+            <Setter Property="Control.Width" Value="136"/>
+            <Setter Property="Control.Height" Value="40"/>
+            <Setter Property="Control.Margin" Value="3"/>
+            <Setter Property="Control.BorderBrush" Value="AliceBlue"/>
+            <Setter Property="Control.BorderThickness" Value="3"/>
+            <Setter Property="Control.FontFamily" Value="Times New Roman"/>
+            <Setter Property="Control.FontSize" Value="14"/>
+            <Setter Property="Control.Foreground" Value="DarkBlue"/>
+
+        </Style>
+        <Style x:Key="Txbl">
+            <Setter Property="TextBlock.HorizontalAlignment" Value="Right"/>
+            <Setter Property="TextBlock.Margin" Value="2"/>
+        </Style>
+
+    </Window.Resources>
+
+    <DockPanel>
+    <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Файл">
+                <MenuItem Name="MenuallID" Header="Все клиенты" Click="MenuallID_Click"/>
+                <MenuItem Name="MenuallAcc" Header="Все счета" Click="MenuallAcc_Click"/>
+                <MenuItem Name="MenuallDepo" Header="Все депозиты" Click="MenuallDepo_Click"/>
+                <MenuItem Header="Сохранить нового клиента" Click="Button_Click"/>
+                <MenuItem Header="Сохранить новый счет" Click="btSaveAcc_Click"/>
+                <MenuItem Header="Сохранить новый депозит" Click="btSavedeposit_Click"/>
+                <MenuItem Name="MenuClose" Header="Закрыть" Click="MenuClose_Click"/>
+            </MenuItem>
+            <MenuItem Header="Правка">
+                <MenuItem Header="Найти клиента по фамилии" Click="btSearch_Click" ToolTip="Для поиска введите фамилию"/>
+                <MenuItem Header="Найти счет" Click="btSearchAcc_Click" ToolTip="Для поиска введите ID"/>
+                <MenuItem Header="Найти договор" Click="btSearchDepo_Click" ToolTip="Для поиска введите ID"/>
+            </MenuItem>
+            <MenuItem Header="Договор">
+                <MenuItem Header="Создать нового клиента" Click="btOpenID_Click"/>
+                <MenuItem Header="Сгенерировать новый счет" Click="btOpenAcc_Click"/>
+                <MenuItem Header="Создать новый договор" Click="btOpenDepo_Click"/>
+            </MenuItem>
+            <MenuItem Name="MenuAbout" Header="О программе" Click="MenuAbout_Click"></MenuItem>
+        </Menu>
+        <TabControl DockPanel.Dock="Top"  TabStripPlacement="Bottom">
+        <TabItem Header="ID" Name="tabHeadID">
+            <Border Style="{StaticResource Myborder}">
+                <Grid >
+                    <StackPanel>
+                        <DataGrid Name="dgCustom" ItemsSource="{Binding Source={StaticResource customers}, Path=Customers}" 
+                              Style="{StaticResource Mydatagrid}" ToolTip="Выберите клиента">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="ID" Binding="{Binding ID}" FontWeight="DemiBold" Width="*"/>
+                                <DataGridTextColumn Header="Фамилия" Binding="{Binding Lastname}" FontWeight="Bold" Width="*"/>
+                                <DataGridTextColumn Header="Имя" Binding="{Binding Name}" Width="*"/>
+                                <DataGridTextColumn Header="Отчество" Binding="{Binding Patronymic}" Width="*"/>
+                                <DataGridTextColumn Header="ИНН" Binding="{Binding Taxnumber}" Width="*"/>
+                                <DataGridTextColumn Header="Дата рождения" Binding="{Binding DateofBirth}" Width="*"/>
+                            </DataGrid.Columns>
+                            <DataGrid.RowDetailsTemplate>
+                                <DataTemplate>
+                                    <StackPanel Margin="2" TextBlock.Foreground="Green">
+                                        <WrapPanel>
+                                            <TextBlock xml:space="preserve" >Паспорт</TextBlock>
+                                            <TextBlock Text="{Binding Passportseries}" Padding="2 0"></TextBlock>
+                                            <TextBlock Text="{Binding Passportnumber}" Padding="2 0"></TextBlock>
+                                            <TextBlock Text="{Binding Issuedby}" Padding="2 0"></TextBlock>
+                                            <TextBlock Text="{Binding Issuedwhen}" Padding="2 0"/>
+                                            <TextBlock Text="{Binding Adress}" Padding="2 0"/>
+                                        </WrapPanel>
+                                     </StackPanel>
+                                </DataTemplate>
+                            </DataGrid.RowDetailsTemplate>
+                        </DataGrid>
+                        <WrapPanel>
+                            <Button Name="btLoadall" Click="btLoadall_Click" Style="{StaticResource Button}" Content="Все клиенты" Visibility="Collapsed"/>
+                            <TextBox Name="tbSearch" Height="20" Width="100" Margin="20" ToolTip="для поиска введите фамилию" />
+                            <Button Name="btSearch" Click="btSearch_Click" Style="{StaticResource Button}" Content="Поиск" ToolTip="для поиска введите фамилию"/>
+                            <Button Name="btOpenID" Click="btOpenID_Click" Style="{StaticResource Button}">Открыть ID</Button>
+                            <Button Click="Button_Click" Style="{StaticResource Button}" ToolTip="после заведения данных нового клиента - нажмите сохранить">Сохранить клиента</Button>
+                            <Button Name="btOpenAcc" Click="btOpenAcc_Click" Style="{StaticResource Button}">Открыть счет</Button>
+                            <Button Name="btOpenDepo" Click="btOpenDepo_Click" Style="{StaticResource Button}">Открыть депозит</Button>
+                            <Button Name="btRefresh" Click="btRefresh_Click" Style="{StaticResource Button}" Width="Auto" ToolTip="Обновить">
+                                <Image Source="icon3.png"/>
+                            </Button>
+                        </WrapPanel>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </TabItem>
+        <TabItem Name="tabHeadAllAcc" Header="Все счета">
+            <Border Style="{StaticResource Myborder}">
+                <Grid >
+                    <StackPanel>
+                            <DataGrid Name="dgAccount" ScrollViewer.VerticalScrollBarVisibility="Visible" ItemsSource="{Binding Source={StaticResource account}, Path = AllAccount}" Style="{StaticResource Mydatagrid}">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="ID" Binding="{Binding ID}"/>
+                                    <DataGridTextColumn Header="Deposit" Binding="{Binding Contr}"/>
+                                    <DataGridTextColumn Header="Account" Binding="{Binding Bal}" />
+                                <DataGridTextColumn Header="Key" Binding="{Binding Key }"/>
+                                <DataGridTextColumn Header="End" Binding="{Binding Tail}"/>
+                                <DataGridTextColumn Header="Balance" Binding="{Binding Balance}"/>
+
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <WrapPanel>
+                        <Button Name="btLoadAcc" Click="btLoadAcc_Click" Style="{StaticResource Button}" Visibility="Collapsed">Все счета</Button>
+                        <TextBox Name="tbSearchAcc" Height="20" Width="100" Margin="20" ToolTip="для поиска введите ID"/>
+                        <Button Name="btSearchAcc" Click="btSearchAcc_Click" Style="{StaticResource Button}" Content="Поиск"/>
+                            <Button Name="btRefreshAcc" Click="btRefreshAcc_Click" Style="{StaticResource Button}" Width="Auto" ToolTip="Обновить" >
+                                <Image Source="icon3.png"/>
+                            </Button>
+                        </WrapPanel>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </TabItem>
+        <TabItem Name="tabHeadAllDepo" Header="Все депозиты">
+            <Border Style="{StaticResource Myborder}">
+                <Grid >
+                    <StackPanel>
+                        <DataGrid Name="dgDeposit" ItemsSource="{Binding Source={StaticResource deposit}, Path = AllDeposit}"  Style="{StaticResource Mydatagrid}">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="ID" Binding="{Binding ID}"/>
+                                <DataGridTextColumn Header="№ договора" Binding="{Binding NumberContr}" />
+                                <DataGridTextColumn Header="Дата договора" Binding="{Binding DataContr }"/>
+                                <DataGridTextColumn Header="Дата окончания" Binding="{Binding DataEnd}"/>
+                                <DataGridTextColumn Header="Сумма договора" Binding="{Binding SumContr}"/>
+                                <DataGridTextColumn Header="Ставка" Binding="{Binding Rate}"/>
+                                <DataGridTextColumn Header="Депозитный счет" Binding="{Binding SumContr}" />
+                                <!--<DataGridTextColumn Binding="{Binding Key }"/>
+                                <DataGridTextColumn Binding="{Binding Tail}"/>
+                                <DataGridTextColumn Header="Balance" Binding="{Binding Balance}"/>-->
+                                    <DataGridTextColumn Header="% счет" Binding="{Binding BalPerc}" />
+                                <!--<DataGridTextColumn Binding="{Binding Key }"/>
+                                <DataGridTextColumn Binding="{Binding Tail}"/>
+                                <DataGridTextColumn Header="Balance" Binding="{Binding Balance}"/>-->
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <WrapPanel>
+                        <Button Name="btLoadDep" Click="btLoadDep_Click" Style="{StaticResource Button}" Visibility="Collapsed">Все депозиты</Button>
+                            <TextBox Name="tbSearchDepo" Height="20" Width="100" Margin="20" ToolTip="для поиска введите ID"/>
+                        <Button Name="btSearchDepo" Click="btSearchDepo_Click" Style="{StaticResource Button}" Content="Поиск"/>
+                                <Button Click="btSavedeposit_Click" Style="{StaticResource Button}">Сохранить</Button>
+                            <Button Name="btRefreshDepo" Click="btRefreshDepo_Click" Style="{StaticResource Button}" Width="Auto" ToolTip="Обновить">
+                                <Image Source="icon3.png"/>
+                            </Button>
+                        </WrapPanel>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </TabItem>
+        <TabItem Header="Добавить ID" Name="tabAddHeadID">
+            <Border Style="{StaticResource Myborder}">
+                <Grid Style="{StaticResource Mydatagrid}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Style="{StaticResource Row}"/>
+                        <RowDefinition Style="{StaticResource Row}"/>
+                        <RowDefinition Style="{StaticResource Row}"/>
+                        <RowDefinition Style="{StaticResource Row}"/>
+                        <RowDefinition Style="{StaticResource Row}"/>
+                        <RowDefinition Style="{StaticResource Row}"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Row="0" Grid.Column="0" Name="txblTax" Text="ИНН" Style="{StaticResource Txbl}"/>
+                    <TextBox Grid.Row="0" Grid.Column="1" Name="tbTax" Margin="10" MinLines="10" MaxLines="10"/>
+                    <TextBlock Grid.Row="1" Grid.Column="0" Name="txblLastname" Text="Фамилия" Style="{StaticResource Txbl}"/>
+                    <TextBox Grid.Row="1" Grid.Column="1" Name="tbLastname" Margin="10"></TextBox>
+                    <TextBlock Grid.Row="2" Grid.Column="0" Name="txblName" Text="Имя" Style="{StaticResource Txbl}"/>
+                    <TextBox Grid.Row="2" Grid.Column="1" Name="tbName" Margin="10"></TextBox>
+                    <TextBlock Grid.Row="3" Grid.Column="0" Name="txblPatr" Text="Отчество" Style="{StaticResource Txbl}"/>
+                    <TextBox Grid.Row="3" Grid.Column="1" Name="tbPatr" Margin="10"/>
+                    <WrapPanel Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Name="cbPassp" Margin="10">
+                        <ComboBox Width="120" VerticalContentAlignment="Center" Foreground="DarkBlue" >
+                            <ComboBoxItem IsSelected="True">Паспорт</ComboBoxItem>
+                            <ComboBoxItem>Загранпаспорт</ComboBoxItem>
+                            <ComboBoxItem>Вид на постоянное место жительства</ComboBoxItem>
+                        </ComboBox>
+                        <TextBlock Text="Серия" Style="{StaticResource Txbl}"/>
+                        <TextBox Name="tbSer" Width="40" Margin="2"/>
+                        <TextBlock Text="Номер" Style="{StaticResource Txbl}"/>
+                        <TextBox Name="tbNumb" Width="60" Margin="2"/>
+                    </WrapPanel>
+                    <TextBlock Grid.Row="2" Grid.Column="2" Text="Кем выдан" Style="{StaticResource Txbl}"/>
+                    <TextBox Grid.Row="2" Grid.Column="3" Name="tbissuedby" Margin="2" TextWrapping="Wrap"/>
+                    <TextBlock Grid.Row="3" Grid.Column="2" Text="дата выдачи" Style="{StaticResource Txbl}"/>
+                    <DatePicker Grid.Row="3" Grid.Column="3" Name="dpissuedwhen" Margin="2" Width="150" />
+                    <TextBlock Grid.Row="4" Grid.Column="0" Text="Дата рождения" Style="{StaticResource Txbl}"/>
+                    <DatePicker Grid.Row="4" Grid.Column="1" Name="dpBirstd" Margin="2" Width="150"/>
+                    <TextBlock Grid.Row="4" Grid.Column="2" Text="Адрес" Style="{StaticResource Txbl}"/>
+                    <TextBox Grid.Row="4" Grid.Column="3" Name="tbAdr" Margin="2" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                    <Button Grid.Row="5" Grid.Column="0" Name="btAdd" Content="Добавить" Click="btAdd_Click" Style="{StaticResource Button}"/>
+                    <Button Grid.Row="5" Grid.Column="1" Click="Button_Click" Style="{StaticResource Button}">Сохранить клиента</Button>
+                </Grid>
+            </Border>
+        </TabItem>
+        <TabItem Header="Открыть счет" Name="tabHeadOpenacc">
+            <Border Style="{StaticResource Myborder}">
+                <Grid Style="{StaticResource Mydatagrid}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Style="{StaticResource Row}"/>
+                        <RowDefinition Style="{StaticResource Row}"/>
+                        <RowDefinition Style="{StaticResource Row}"/>
+                        <RowDefinition Style="{StaticResource Row}"/>
+                        <RowDefinition Style="{StaticResource Row}"/>
+                        <RowDefinition Style="{StaticResource Row}"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Row="0" Name="txblIDac" Text="ID" Style="{StaticResource Txbl}"/>
+                    <TextBox Grid.Row="0" Grid.Column="1" Name="tbIDac" Margin="10" />
+                    <TextBlock Grid.Row="1" Grid.Column="0" Text="Балансовый номер" Style="{StaticResource Txbl}"/>
+                    <TextBox Grid.Row="1" Grid.Column="1" Name="tbBal" Margin="10"/>
+                        <TextBlock Grid.Row="2" Grid.Column="0" Name="txblDep" Margin="10" />
+                        <WrapPanel Grid.Row="2" Grid.Column="1">
+                    <TextBox  Name="tbBalII" Margin="10" IsEnabled="False"/>
+                    <TextBox Name="tbKey" Margin="10" IsEnabled="False"/>
+                    <TextBox Name="tbTail" Margin="10" IsEnabled="False"></TextBox>
+                    </WrapPanel>
+                    <Button Grid.Row="3" Grid.Column="0" Name="btAddAcc" Content="Сгенерировать счет" Click="btAddAcc_Click" Style="{StaticResource Button}"/>
+                    <Button Grid.Row="3" Grid.Column="1" Name="btSaveAcc" Click="btSaveAcc_Click" Style="{StaticResource Button}">Сохранить</Button>
+                </Grid>
+            </Border>
+        </TabItem>
+        <TabItem Header="Открыть депозит" Name="tabHeadAddDepo">
+            <Border Style="{StaticResource Myborder}">
+                <Grid Style="{StaticResource Mydatagrid}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Style="{StaticResource Row}"/>
+                        <RowDefinition Style="{StaticResource Row}"/>
+                        <RowDefinition Style="{StaticResource Row}"/>
+                        <RowDefinition Style="{StaticResource Row}"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Row="0" Grid.Column="2" Text="№ договора" Style="{StaticResource Txbl}"/>
+                    <TextBox Grid.Row="0" Grid.Column="3" Name="tbNumbcontr" Margin="10" IsEnabled="False"></TextBox>
+                    <TextBlock Grid.Row="0" Grid.Column="0"  Text="ID клиента" Style="{StaticResource Txbl}"/>
+                    <TextBox Grid.Row="0" Grid.Column="1"  Name="tbIDdep" Margin="10"/>
+                    <TextBlock Grid.Row="1" Grid.Column="0" Text="Сумма договора" Style="{StaticResource Txbl}"/>
+                    <TextBox Grid.Row="1" Grid.Column="1" Name="tbSum" Margin="10"></TextBox>
+                    <WrapPanel Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Name="cbDeposit" Margin="10">
+                        <ComboBox Width="120" VerticalContentAlignment="Stretch" Foreground="DarkBlue" >
+                            <ComboBoxItem Name="cb1m" IsSelected="True">1 месяц 11%</ComboBoxItem>
+                            <ComboBoxItem Name="cb2m">2 месяца 12%</ComboBoxItem>
+                            <ComboBoxItem Name="cb3m">3 месяца 13%</ComboBoxItem>
+                        </ComboBox>
+                    </WrapPanel>
+                    <Button Name="btAdddeposit" Grid.Row="3" Grid.Column="0" Content="Добавить депозит" Click="btAdddeposit_Click" Style="{StaticResource Button}"/>
+                    <Button Name="btSavedeposit" Grid.Row="3" Grid.Column="1" Content="Сохранить депозит" Click="btSavedeposit_Click" Style="{StaticResource Button}"/>
+                    <StackPanel Grid.Row="2" Grid.Column="1" Margin="2">
+                        
+                    </StackPanel>
+                    <StackPanel Grid.Row="2" Grid.Column="2" Margin="2">
+                        <TextBlock Style="{StaticResource Txbl}">Дата открытия</TextBlock>
+                        <TextBlock Style="{StaticResource Txbl}">Дата окончания</TextBlock>
+                    </StackPanel>
+                    <StackPanel Grid.Row="2" Grid.Column="3" Margin="2">
+                        <TextBox Name="tbDatacontr" IsEnabled="False"></TextBox>
+                        <TextBox Name="tbDataend" IsEnabled="False"></TextBox>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </TabItem>
+            <TabItem Header="Day" Name="tabHeadDay">
+                <Border Style="{StaticResource Myborder}">
+                    <WrapPanel>
+                    <Button Name="btCalc" Style="{StaticResource Button}" Click="btCalc_Click">Начислить проценты</Button>
+                        <Button Style="{StaticResource Button}" Click="btSavedeposit_Click">Сохранить</Button>
+                    </WrapPanel>
+                </Border>
+            </TabItem>
+    </TabControl>
+    
+    </DockPanel>
+</Window>

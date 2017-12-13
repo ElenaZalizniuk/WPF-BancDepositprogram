@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<ArrayOfCustomID xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CustomID>
+    <ID>980001</ID>
+    <Lastname>Семенов</Lastname>
+    <Name>Егор</Name>
+    <Patronymic>Петрович</Patronymic>
+    <Taxnumber>2314253424</Taxnumber>
+    <Passportseries>АЕ</Passportseries>
+    <Passportnumber>49586</Passportnumber>
+    <Issuedby>Кировским РВ</Issuedby>
+    <Issuedwhen>29.11.2017</Issuedwhen>
+    <DateofBirth>04.12.2009</DateofBirth>
+    <Adress>г.Днепр, ул. Свердлова,30</Adress>
+  </CustomID>
+  <CustomID>
+    <ID>980002</ID>
+    <Lastname>Егорова</Lastname>
+    <Name>Мария</Name>
+    <Patronymic>Петровна</Patronymic>
+    <Taxnumber>1029384756</Taxnumber>
+    <Passportseries>АК</Passportseries>
+    <Passportnumber>49467</Passportnumber>
+    <Issuedby>Бабушкинским РВ</Issuedby>
+    <Issuedwhen>01.11.2017</Issuedwhen>
+    <DateofBirth>30.11.2001</DateofBirth>
+    <Adress>г.Днепр, ул. Соборная, 60</Adress>
+  </CustomID>
+  <CustomID>
+    <ID>980003</ID>
+    <Lastname>Рыбаченко</Lastname>
+    <Name>Виктор</Name>
+    <Patronymic>Михайлович</Patronymic>
+    <Taxnumber>1923354637</Taxnumber>
+    <Passportseries>СВ</Passportseries>
+    <Passportnumber>342536</Passportnumber>
+    <Issuedby>Новомосковским РВ ДГУ</Issuedby>
+    <Issuedwhen>10.05.2001</Issuedwhen>
+    <DateofBirth>19.09.1976</DateofBirth>
+    <Adress>г. Новомосковск, ул. Письменная, 34</Adress>
+  </CustomID>
+  <CustomID>
+    <ID>980004</ID>
+    <Lastname>Николаенко</Lastname>
+    <Name>Павел</Name>
+    <Patronymic>Анатольевич</Patronymic>
+    <Taxnumber>2106234512</Taxnumber>
+    <Passportseries>АК</Passportseries>
+    <Passportnumber>35265</Passportnumber>
+    <Issuedby>Индустриальным РО</Issuedby>
+    <Issuedwhen>28.12.1995</Issuedwhen>
+    <DateofBirth>21.06.1954</DateofBirth>
+    <Adress>г. Днепр, ул. Свиридова, 14 кв. 36</Adress>
+  </CustomID>
+  <CustomID>
+    <ID>980005</ID>
+    <Lastname>Васильев</Lastname>
+    <Name>Федор</Name>
+    <Patronymic>Петрович</Patronymic>
+    <Taxnumber>2314253647</Taxnumber>
+    <Passportseries>АМ</Passportseries>
+    <Passportnumber>234563</Passportnumber>
+    <Issuedby>Жовтневым РВ ДГУ</Issuedby>
+    <Issuedwhen>20.12.2008</Issuedwhen>
+    <DateofBirth>16.03.1973</DateofBirth>
+    <Adress>г. Днепр, пр. Гагарина, д. 5, кв. 115</Adress>
+  </CustomID>
+  <CustomID>
+    <ID>980006</ID>
+    <Lastname>Инкова</Lastname>
+    <Name>Мария</Name>
+    <Patronymic>Вадимовна</Patronymic>
+    <Taxnumber>2534364745</Taxnumber>
+    <Passportseries>АК</Passportseries>
+    <Passportnumber>345256</Passportnumber>
+    <Issuedby>Левобережным РВ</Issuedby>
+    <Issuedwhen>28.11.2016</Issuedwhen>
+    <DateofBirth>31.05.2000</DateofBirth>
+    <Adress>г. Днепр, ул. Павлова,133</Adress>
+  </CustomID>
+  <CustomID>
+    <ID>980007</ID>
+    <Lastname>Пирова</Lastname>
+    <Name>Ольга</Name>
+    <Patronymic>Алексеевна</Patronymic>
+    <Taxnumber>1923354636</Taxnumber>
+    <Passportseries>АР</Passportseries>
+    <Passportnumber>554789</Passportnumber>
+    <Issuedby>Запорожским РВ</Issuedby>
+    <Issuedwhen>28.11.2007</Issuedwhen>
+    <DateofBirth>27.11.1974</DateofBirth>
+    <Adress>г. Запорожье, ул. Власова,23</Adress>
+  </CustomID>
+  <CustomID>
+    <ID>980008</ID>
+    <Lastname>Петров</Lastname>
+    <Name>Иван</Name>
+    <Patronymic>Васильевич</Patronymic>
+    <Taxnumber>2134253425</Taxnumber>
+    <Passportseries>АЕ</Passportseries>
+    <Passportnumber>34256</Passportnumber>
+    <Issuedby>Бабушкинским РВ</Issuedby>
+    <Issuedwhen>27.11.2017</Issuedwhen>
+    <DateofBirth>29.12.2000</DateofBirth>
+    <Adress>г. Днепр, пр. Гагарина, 114 кв.245</Adress>
+  </CustomID>
+  <CustomID>
+    <ID>980009</ID>
+    <Lastname>Сухоруков</Lastname>
+    <Name>Игорь</Name>
+    <Patronymic>Васильевич</Patronymic>
+    <Taxnumber>2673452613</Taxnumber>
+    <Passportseries>АК</Passportseries>
+    <Passportnumber>24567</Passportnumber>
+    <Issuedby>Центральным РО</Issuedby>
+    <Issuedwhen>27.04.2009</Issuedwhen>
+    <DateofBirth>13.04.1980</DateofBirth>
+    <Adress>г. Днепр, ул. Слободская, д.5, кв. 34</Adress>
+  </CustomID>
+  <CustomID>
+    <ID>980010</ID>
+    <Lastname>Глечикова</Lastname>
+    <Name>Мария</Name>
+    <Patronymic>Петровна</Patronymic>
+    <Taxnumber>2214253645</Taxnumber>
+    <Passportseries>АК</Passportseries>
+    <Passportnumber>97245</Passportnumber>
+    <Issuedby>АНД РО ДГУ</Issuedby>
+    <Issuedwhen>13.07.2007</Issuedwhen>
+    <DateofBirth>15.06.1978</DateofBirth>
+    <Adress>г. Днепр, пр. Кирова, 113, 251</Adress>
+  </CustomID>
+</ArrayOfCustomID>
